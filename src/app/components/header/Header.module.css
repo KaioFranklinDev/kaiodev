@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: #010018;
+    position: fixed;
+    z-index: 1000;
+}
+.header a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.header a:hover{
+    color: blueviolet;
+}

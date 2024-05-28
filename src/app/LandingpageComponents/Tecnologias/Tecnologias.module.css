@@ -1,0 +1,83 @@
+.section_Tecnologias {
+    padding-top: 100px;
+}
+
+.section_Tecnologias_Titulo_H3 {
+    color: rgb(76, 34, 116);
+    font-size: 100px;
+}
+
+.section_Tecnologias_Titulo_H2 {
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 280px;
+    font-size: 50px;
+}
+
+.section_Tecnologias_Div {
+    width: 100px;
+    height: 5px;
+    background-color: blueviolet;
+    margin-left: 380px; 
+}
+
+@media only screen and (max-width: 900px) {
+    .section_Tecnologias_Titulo_H3 {
+        font-size: 40px;
+    }
+    .section_Tecnologias_Titulo_H2 {
+        position: absolute;
+        margin-top: -45px;
+        margin-left: 45px;
+        font-size: 35px;
+    }
+    .section_Tecnologias_Div {
+        margin-left: 100px;
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    padding-top: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.card {
+    background-color: #300b56;
+    border: 2px solid #7209b7;
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        padding-left: 90px;
+        grid-template-columns: 1fr; /* Altera as colunas para ocupar 100% da largura */
+    }
+    .card {
+        width: 120px; /* Ajusta a largura do card para 100% do contêiner */
+        margin-left: 0; /* Remover o margin-left */
+    }
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}

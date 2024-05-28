@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 155px;
+    background-color: #010018;
+    color: white;
+}
+.footer > *{
+    padding: 10px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a svg{
+    padding-top: 20px;
+    font-size: 30px;
+    padding-right: 10px;   
+}
+.footer a svg:hover , .footer a:hover {
+    color: blueviolet;
+}
+.footer p{
+    color: rgb(136, 135, 135);
+}

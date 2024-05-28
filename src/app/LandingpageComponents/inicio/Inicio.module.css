@@ -1,0 +1,62 @@
+.sectionInicio{
+  display: flex;
+  margin-top: 100px;
+  gap: 300px;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 992px){
+  .sectionInicio{
+    
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .sectionInicio{
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.inicioText{
+    width: 300px;
+   
+}
+.inicioText h1{
+    
+    color: #8e22bb;
+    border-right: 10px solid #8e22bb;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: mark 0.5s step-end infinite, write 3s steps(22,end) infinite;
+}
+.inicioTextP , .inicioText a{
+  text-align: left ;
+}
+.inicioTextItens{
+  display: flex;
+  
+}
+.inicioTextItens a{
+  font-size: 30px;
+  padding-right: 5px;
+}
+.inicioText div p{
+    text-align: justify;
+}
+@keyframes mark{
+  50% {
+    border-right-color: transparent;
+  }
+}
+@keyframes write {
+  20%{
+    width: 9.5ch;
+  }
+  70%{
+    width: 9.5ch;
+  }
+  85%{
+    width: 0;
+  }
+  100%{width: 0;}
+}
